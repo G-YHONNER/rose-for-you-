@@ -33,6 +33,10 @@
             left: 50%;
             top: 55%;
             transform: translate(-50%, -50%) scale(0.95);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
         }
         
         .container2 * {
@@ -52,6 +56,11 @@
             height: 80px;
             top: 55px;
             transition: all 0.5s ease-out;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            will-change: transform;
         }
         
         .container2 .petals > div:nth-child(1) {
@@ -143,6 +152,11 @@
             border-radius: 0px 30px 0px 30px;
             box-shadow: 0px 0px 30px rgba(245, 148, 184, 0.5);
             transition: all 0.5s ease-out;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            will-change: transform, opacity;
         }
         
         .container2 .deadPetals > div:nth-child(1) {
